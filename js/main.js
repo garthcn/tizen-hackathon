@@ -1,6 +1,7 @@
 //Initialize function
 var init = function () {
     // TODO:: Do your initialization job
+    window.mySwipe = Swipe(document.getElementById('slider-project'));
     console.log("init() called");
 
     // add eventListener for tizenhwkey

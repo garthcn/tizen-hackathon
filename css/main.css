@@ -1,9 +1,19 @@
+@font-face {
+  font-family: HelveticaNeue-Light;
+  src: url('font/helveticaneue-light.otf');
+}
+
+@font-face {
+  font-family: HelveticaNeue-Thin;
+  src: url('font/helveticaneue-thin.otf');
+}
+
 body#tizen div.full-page {
-  width: 720px;
-  height: 1280px;
+  width: 360px;
+  height: 610px;
 }
 body#tizen div {
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+  font-family: 'HelveticaNeue-Thin', 'HelveticaNeue-Light';
   text-shadow: none;
   font-weight: lighter;
 }
@@ -14,25 +24,25 @@ body#tizen a {
 }
 
 div.full-row {
-  height: 233px;
+  height: 111px;
   /*line-height: 70px;*/
   font-size: 40px;
   padding-left: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
   color: white;
 }
 
 div.footer-row {
-  height: 115px;
+  height: 57px;
   background-color: black;
   color: white;
   position: fixed;
   bottom: 0;
-  width: 720px;
+  width: 360px;
 }
 
 div.full-height {
-  height: 1280px;
+  height: 610px;
 }
 
 div.subcontent {
@@ -44,7 +54,7 @@ div.subcontent {
 
 div.back {
   background: url('images/back.png') no-repeat left center;
-  background-size: 70px 51px;
+  background-size: 35px 25px;
   width: 40%;
   height: 100%;
   margin-left: 20px;
@@ -52,35 +62,115 @@ div.back {
 
 div.setting {
   background: url('images/setting.png') no-repeat right center;
-  background-size: 70px 51px;
+  background-size: 35px 25px;
   width: 40%;
   height: 100%;
   margin-right: 20px;
 }
 
-.color1 {
+#tizen .color1 {
   background-color: #74c9cb;
 }
-.color2 {
+#tizen .color2 {
   background-color: #603813;
 }
-.color3 {
+#tizen .color3 {
   background-color: #ea5e2f;
 }
-.color4 {
+#tizen .color4 {
   background-color: #f9b42e;
 }
-.color5 {
+#tizen .color5 {
   background-color: #6b5c3d;
 }
 
 
 body#tizen div.title {
   text-align: center;
-  font-size: 64px;
+  font-size: 44px;
 }
 body#tizen div.subtitle {
-  font-family: "HelveticaNeue";
-  font-size: 34px;
+  font-family: "HelveticaNeue-Light";
+  font-size: 24px;
   text-align: center;
+  font-weight: bold;
+}
+
+div.contact-content {
+  width: 310px;
+  margin: 40px auto;
+  /*height: 400px;*/
+  background-color: white; 
+}
+div.contact-content ul {
+  list-style-type: none;
+  color: #747578; 
+  font-size: 18px;
+  /*display: table;*/
+  padding: 30px 0;
+}
+div.contact-content ul li {
+  /*vertical-align: middle;*/
+  /*display: table-cell;*/
+  /*border: 1px solid #747578;*/
+  padding: 10px 0;
+  padding-left: 40px;
+  margin-left: 20px;
+}
+div.contact-content ul li.addr {
+  background: url('images/addr.png') no-repeat left center;
+  background-size: 20px 20px;
+}
+div.contact-content ul li.phone {
+  background: url('images/phone.png') no-repeat left center;
+  background-size: 20px 20px;
+}
+div.contact-content ul li.website {
+  background: url('images/website.png') no-repeat left center;
+  background-size: 20px 20px;
+}
+div.contact-content ul li.email {
+  background: url('images/email.png') no-repeat left center;
+  background-size: 20px 20px;
+}
+div.contact-row {
+  background: #74c9cb url('images/contact.png') no-repeat right center;
+  background-size: 116px 116px;
+}
+div.experience-row {
+  background: #74c9cb url('images/experience.png') no-repeat right center;
+  background-size: 116px 116px;
+}
+div.education-row {
+  background: #74c9cb url('images/education.png') no-repeat right center;
+  background-size: 116px 116px;
+}
+div.skill-row {
+  background: #74c9cb url('images/skill.png') no-repeat right center;
+  background-size: 116px 116px;
+}
+div.project-row {
+  background: #74c9cb url('images/project.png') no-repeat right center;
+  background-size: 116px 116px;
+}
+div.pinmo-image {
+  background: url('images/pinmo.png') no-repeat center top;
+  background-size: 116px 116px;
+  position: relative;
+  top: -20px;
+}
+div.later-image {
+  background: url('images/later.png') no-repeat center top;
+  background-size: 116px 116px;
+  position: relative;
+  top: -20px;
+}
+div.project-content {
+  width: 310px;
+  margin: 40px auto;
+  height: 320px;
+  background-color: white; 
+}
+div.project-content div {
+  height: 200px;
 }
