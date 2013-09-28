@@ -11,75 +11,194 @@
     <script type="text/javascript" src="./js/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="./js/jquery.mobile-1.2.0.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/swipe.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swipe.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/metro.blue.css" />
+
+<style>
+
+/* Swipe 2 required styles */
+.swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+
+.swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+.swipe-wrap>div {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+/* END required styles */
+</style>
 </head>
 
-<body>
+<body id="tizen">
     <!-- Start of first page: #one -->
-    <div data-role="page" id="one" >
-        <div data-role="header" data-position="fixed" >
-            <h1>Multi-page application</h1>
+    <div class='full-page' data-role="page" id="one" >
+        <div data-role="header" >
+            <h1>Profile</h1>
         </div><!-- /header -->
 
         <div data-role="content" >
-            <h2>One</h2>
-            <p>
-                This is a multi-page boilerplate template that you can copy to build
-                your first jQuery Mobile page. This template contains multiple "page"
-                containers inside.
-            </p>
-            <p>
-                You link to internal pages by referring to the ID of the page you
-                want to show. For example, to <a href="#two">link</a> to the page
-                with an ID of "two", my link would have a
-                <code>href="#two"</code>
-                in the code.
-            </p>
+			<div class="tiles">
+				<div class="tilerow">
+					<div class="tile two-h tealbg">
+						content
+					</div>
+					<div class="tile one bluebg">
+						content
+					</div>
+				</div>
+				<div class="tilerow">
+					<div class="tile one bluebg">
+						content
+					</div>
+					<div class="tile one bluebg">
+						content
+					</div>
+					<div class="tile one bluebg">
+						content
+					</div>
+				</div>
+				<div class="tilerow">
+					<div class="tile one limebg">
+						content
+					</div>
+					<div class="tile two-h limebg">
+						content
+					</div>
+				</div>
+			</div>
 
-            <h3>Show internal pages:</h3>
-            <p>
-                <a href="#two" data-role="button">Show page "two"</a>
-            </p>
-            <p>
-                <a href="#popup" data-role="button" data-rel="dialog"
-                    data-transition="pop">Show page "popup" (as a dialog)</a>
-            </p>
-        </div><!-- /content -->
-
-        <div data-role="footer" data-position="fixed" >
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
+      </div><!-- /content -->
+        
     </div><!-- /page one -->
 
     <!-- Start of second page: #two -->
-    <div data-role="page" id="two" >
+    <div class='full-page' data-role="page" id="two" >
+      <a href="#sub1" data-transition="slide">
+        <div class="full-row color1">
+          Contact
+        </div>
+      </a>
 
-        <div data-role="header" >
-            <h1>Two</h1>
-        </div><!-- /header -->
+      <a href="#sub2" data-transition="slide">
+        <div class="full-row color2">
+          Education
+        </div>
+      </a>
 
-        <div data-role="content" >
-            <h2>Two</h2>
-            <p>I have an id of "two" on my page container. I'm the second
-                page container in this multi-page template.</p>
-            <p>
-                Notice that the theme is different for this page because we've added
-                a few
-                <code>data-theme</code>
-                swatch assigments here to show off how flexible it is. You can add
-                any content or widget to these pages, but we're keeping these
-                simple.
-            </p>
-            <p>
-                <a href="#one" data-direction="reverse" data-role="button"
-                    >Back to page "one"</a>
-            </p>
-        </div><!-- /content -->
+      <a href="#sub3" data-transition="slide">
+        <div class="full-row color3">
+          Experience
+        </div>
+      </a>
 
-        <div data-role="footer" data-position="fixed" >
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
+      <a href="#sub4" data-transition="slide">
+        <div class="full-row color4">
+          Projects
+        </div>
+      </a>
+
+      <a href="#sub5" data-transition="slide">
+        <div class="full-row color5">
+          Skills
+        </div>
+      </a>
+
+      <div class='clearfix footer-row'>
+        <!--
+        <div class='back pull-left'>
+        </div>
+        -->
+        <div class='setting pull-right'>
+        </div>
+      </div>
+   
     </div><!-- /page two -->
+
+    <!--Sub pages-->
+    <div class='full-page' data-role="page" id="sub1">
+      <div class="full-height color1">
+        <div class='subcontent'>
+          <div class='title'>
+            Jiasi Zeng
+          </div>
+          <div class='subtitle'>
+            Software Engineer
+          </div>
+        </div>
+        <div class='clearfix footer-row'>
+          <a href="#two" data-transition="slide" data-direction="reverse">
+            <div class='back pull-left'>
+            </div>
+          </a>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='full-page' data-role="page" id="sub2">
+      <div class="full-height color2">
+        2nd Basic Info
+        <div class='clearfix footer-row'>
+          <div class='back pull-left'>
+          </div>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='full-page' data-role="page" id="sub3">
+      <div class="full-height color3">
+        2nd Basic Info
+        <div class='clearfix footer-row'>
+          <div class='back pull-left'>
+          </div>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='full-page' data-role="page" id="sub4">
+      <div class="full-height color4">
+        2nd Basic Info
+        <div class='clearfix footer-row'>
+          <div class='back pull-left'>
+          </div>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class='full-page' data-role="page" id="sub5">
+      <div class="full-height color5">
+        2nd Basic Info
+        <div class='clearfix footer-row'>
+          <div class='back pull-left'>
+          </div>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End of subpages-->
+
 
     <!-- Start of third page: #popup -->
     <div data-role="page" id="popup" >

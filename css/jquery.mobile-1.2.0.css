@@ -209,7 +209,7 @@
 .ui-body-b select,
 .ui-body-b textarea,
 .ui-body-b button {
-	font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+	font-family: HelveticaNeue-Light, Arial, sans-serif /*{global-font-family}*/;
 }
 .ui-body-b .ui-link-inherit {
 	color: 	#333 /*{b-body-color}*/;

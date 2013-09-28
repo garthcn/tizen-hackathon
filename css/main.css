@@ -1,0 +1,86 @@
+body#tizen div.full-page {
+  width: 720px;
+  height: 1280px;
+}
+body#tizen div {
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight';
+  text-shadow: none;
+  font-weight: lighter;
+}
+
+body#tizen a {
+  margin: 0;
+  text-decoration: none;
+}
+
+div.full-row {
+  height: 233px;
+  /*line-height: 70px;*/
+  font-size: 40px;
+  padding-left: 20px;
+  padding-top: 100px;
+  color: white;
+}
+
+div.footer-row {
+  height: 115px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 720px;
+}
+
+div.full-height {
+  height: 1280px;
+}
+
+div.subcontent {
+  font-size: 40px;
+  /*padding-left: 20px;*/
+  padding-top: 50px;
+  color: white;
+}
+
+div.back {
+  background: url('images/back.png') no-repeat left center;
+  background-size: 70px 51px;
+  width: 40%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+div.setting {
+  background: url('images/setting.png') no-repeat right center;
+  background-size: 70px 51px;
+  width: 40%;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.color1 {
+  background-color: #74c9cb;
+}
+.color2 {
+  background-color: #603813;
+}
+.color3 {
+  background-color: #ea5e2f;
+}
+.color4 {
+  background-color: #f9b42e;
+}
+.color5 {
+  background-color: #6b5c3d;
+}
+
+
+body#tizen div.title {
+  text-align: center;
+  font-size: 64px;
+}
+body#tizen div.subtitle {
+  font-family: "HelveticaNeue";
+  font-size: 34px;
+  text-align: center;
+}
