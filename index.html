@@ -39,10 +39,12 @@
 }
 
 /* END required styles */
+.ui-page { -webkit-backface-visibility: hidden; }
 </style>
 </head>
 
 <body id="tizen">
+  <div id='tizen-container'>
 
     <!-- Start of second page: #one -->
     <div class='full-page' data-role="page" id="one" >
@@ -81,8 +83,10 @@
         <div class='back pull-left'>
         </div>
         -->
-        <div class='setting pull-right'>
-        </div>
+        <a href='#mypanel'>
+          <div class='setting pull-right'>
+          </div>
+        </a>
       </div>
    
     </div><!-- /page one -->
@@ -149,7 +153,7 @@
       <div class="full-height color4">
         <div class='subcontent'>
           <div class='title'>
-            Jiasi Zeng
+            Projects
           </div>
           <div id='slider-project' class='swipe'>
             <div class='swipe-wrap'>
@@ -157,8 +161,33 @@
                 <div class='subtitle'>
                   PinMo, Hackathon
                 </div>
-                <div class='project-content'>
-                  <div class='pinmo-image'>
+                <div class='flip'>
+                  <div class='card'>
+
+                    <div class='project-content fix-size face front'>
+                      <div class='image pinmo-image'>
+                      </div>
+                      <div class='role'>
+                        Web Developer
+                      </div>
+                      <div class='detail'>
+                        <div>September 21-22, 2013</div>
+                        <div>Mountain View, CA</div>
+                      </div>
+                    </div>
+
+                    <div class='project-content fix-size face oppo'>
+                      <div class='image pinmo-image'>
+                      </div>
+                      <div class='role'>
+                        First Prize
+                      </div>
+                      <div class='detail'>
+                        <div>Emirates Hackathon</div>
+                        <div>Mountain View, CA</div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -167,8 +196,15 @@
                 <div class='subtitle'>
                   Later, iOS App
                 </div>
-                <div class='project-content'>
-                  <div class='later-image'>
+                <div class='project-content fix-size'>
+                  <div class='image later-image'>
+                  </div>
+                  <div class='role'>
+                    iOS Developer
+                  </div>
+                  <div class='detail'>
+                    <div>Oct-Dec, 2011</div>
+                    <div>Palo Alto, CA</div>
                   </div>
                 </div>
               </div>
@@ -201,36 +237,39 @@
       </div>
     </div>
 
+    <div class='full-page' data-role='page' id='pinmo-flip'>
+
+      <div class="full-height color4">
+        <div class='subcontent'>
+          <div class='title'>
+            Jiasi Zeng
+          </div>
+
+          <div class='project-content'>
+            <div class='image later-image'>
+            </div>
+            <div class='role'>
+              iOS Developer
+            </div>
+            <div class='detail'>
+              <div>Oct-Dec, 2011</div>
+              <div>Palo Alto, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class='clearfix footer-row'>
+          <a href="#sub4" data-transition="flip" data-direction="reverse">
+            <div class='back pull-left'>
+            </div>
+          </a>
+          <div class='setting pull-right'>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--End of subpages-->
 
-
-    <!-- Start of third page: #popup -->
-    <div data-role="page" id="popup" >
-        <div data-role="header" >
-            <h1>Dialog</h1>
-        </div><!-- /header -->
-
-        <div data-role="content" >
-            <h2>Popup</h2>
-            <p>
-                I have an id of "popup" on my page container and only look like a
-                dialog because the link to me had a
-                <code>data-rel="dialog"</code>
-                attribute which gives me this inset look and a
-                <code>data-transition="pop"</code>
-                attribute to change the transition to pop. Without this, I'd be
-                styled as a normal page.
-            </p>
-            <p>
-                <a href="#one" data-rel="back" data-role="button" data-inline="true"
-                    data-icon="back">Back to page "one"</a>
-            </p>
-        </div><!-- /content -->
-
-        <div data-role="footer" data-position="fixed" >
-            <h4>Page Footer</h4>
-        </div><!-- /footer -->
-    </div><!-- /page popup -->
-
+  </div>
 </body>
 </html>
